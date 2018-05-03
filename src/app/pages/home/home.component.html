@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="input-field">
+    <input id="search" type="text" (input)="search($event.target.value)">
+    <label for="search">Search GitHub User</label>
+  </div>
+
+  <ul class="collection" *ngIf="users.length">
+      <li class="collection-item avatar" *ngFor="let user of users" [routerLink]="['user', user.login]">
+        <img [src]="user.avatar_url" class="circle">
+        <span class="title">{{user.login}}</span>
+        <a class="secondary-content"><i class="material-icons">send</i></a>
+      </li>
+    </ul>
+</div>

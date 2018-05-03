@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+app-user-detail, app-home {
+  display: block;
+  margin-top: 50px;
+}

@@ -1,0 +1,13 @@
+
+.card-panel.collection  {
+  padding: 0;
+}
+.collection-item > div {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.repos {
+  max-height: 600px;
+  overflow: auto;
+}
